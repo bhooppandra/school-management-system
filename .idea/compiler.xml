@@ -2,19 +2,22 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config-service" />
         <module name="users-management-service" />
         <module name="spring-cloud-gateway-service" />
+        <module name="config-server-service" />
         <module name="discovery-server-service" />
+        <module name="api-gateway-service" />
         <module name="hystrix-dashboard" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="config-service" target="17" />
+      <module name="api-gateway-service" target="17" />
+      <module name="config-server-service" target="17" />
       <module name="discovery-server-service" target="17" />
       <module name="hystrix-dashboard" target="1.8" />
       <module name="spring-cloud-gateway-service" target="1.8" />
@@ -23,7 +26,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="config-service" options="-parameters" />
+      <module name="api-gateway-service" options="-parameters" />
+      <module name="config-server-service" options="-parameters" />
       <module name="discovery-server-service" options="-parameters" />
       <module name="hystrix-dashboard" options="-parameters" />
       <module name="spring-cloud-gateway-service" options="-parameters" />

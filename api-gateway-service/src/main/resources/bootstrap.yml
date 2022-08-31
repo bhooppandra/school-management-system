@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: users-management-service
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/users/**
+    config:
+      uri:  http://localhost:8888
