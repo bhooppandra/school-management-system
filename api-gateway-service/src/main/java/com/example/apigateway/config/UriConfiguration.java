@@ -15,4 +15,5 @@ public class UriConfiguration {
     public void setHttpbin(String httpbin) {
         this.httpbin = httpbin;
     }
-}*/
+}
+*/

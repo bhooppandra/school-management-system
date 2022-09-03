@@ -16,7 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api-gateway-service" target="17" />
+      <module name="api-gateway-service" target="1.8" />
       <module name="config-server-service" target="17" />
       <module name="discovery-server-service" target="17" />
       <module name="hystrix-dashboard" target="1.8" />
