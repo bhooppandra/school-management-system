@@ -1,3 +1,4 @@
+/*
 package com.example.apigateway.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,3 +12,4 @@ public class FallbackController {
         return Mono.just("fallback");
     }
 }
+*/
